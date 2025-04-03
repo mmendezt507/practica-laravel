@@ -29,8 +29,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //session()->put('posts', []);
-        //dd($request->all());
+
         $posts = session('posts', []);
         $id = count($posts) + 1;
         $posts[] = [
